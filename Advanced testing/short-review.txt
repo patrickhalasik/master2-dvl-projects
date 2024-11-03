@@ -1,30 +1,51 @@
 Short review of "The Impact of Equivalent Mutants"
 
 *Summary
-The authors talk about the problem of equivalent mutants in mutation testing. 
-Equivalent mutants are changes in the code that do not change software's behavior.
-Their problem is that they cannot be detected by test suites. The authors experimented
-on an unpopular library called Jaxen XPATH query engine with a lot of testing code
-and coverage. After experimenting with that library, they found out that 
-40% of the mutations were equivalent. The contribution of the authors is a development
-of their own mutation tool called Javalance that could reduce these equivalent mutations (to be confirmed)
+The authors discuss the problem of equivalent mutants in mutation testing. 
+Equivalent mutants are changes in the code that do not alter the behavior of the
+software and that cannot be detected by test tools. 
+They experimented on jaxen, an XPath query engine library for Java, with an important amount of test code with a 66,79% coverage.
+The result of their experiment was that 40% of the mutations were equivalent.
+The primary contribution of this paper is a mutation tool developed by the authors
+called JAVALANCE, which could potentially improve mutation testing
+efficiency and reduce the frequency of equivalent mutants compared to existing
+tools like µJava.
 
 * Pros
+- The explanation of the impact of equivalent mutants as false positives in mutation tools
+is clear and includes good examples
+- The authors propose a potential solution to the problem through the development of 
+their own mutation tool
 
 * Cons
-- The examples from the jaxen code are not clear and require knowledge of what a xpath query engine,
-namespace node, xpath factory, jaxen handler, pattern parser, etc... is. 
+- The examples taken from jaxen code require familiarity with complex terms like
+XPath, query engine, namespace nodes, pattern parses, etc...
+- The experiment could have been conducted on more than one program to confirm whether
+a 40% equivalent mutation rate is common
 
 * Which sections could be improved
-- The introduction section could have had a paragraph about the context of Jaxen - what it 
-exactly is, in which projects it is being used, and why the authors chose such an unpopular library 
-to experiment. I understand that jaxen had an important number of testing code and coverage, but 
-this should not be the sole argument. The authors just mentionned that Jaxen is an XPath query
-engine, but I personally have no idea what it means and how it can be useful in projects.
-After mentioning that jaxen is only used in dozen projects, it made me less engaged in the article
-- Easiers examples of equivalent mutants can be used, so that readers spend less time trying
+- The introduction section could include a paragraph about the context of jaxen -
+what it does as an XPath query engine and in which cases it can be useful.
+While the test coverage of jaxen is a good argument, the authors could have explained
+why they did not choose other programs that might have been more popular and engaging
+for the readers. Mentioning that jaxen is only used in a dozen projects can make readers
+less engaged in the article, especially since such an experiment requires a lot of time
+and effort on a small library with no significant impact on the software community.
+- Simpler examples of equivalent mutants could be used, so that readers spend less time trying
 to understand the code and more time on the main topic of the article
-- An addition of a glossary at the end of the article could be added (or footnote) to give 
-a definition for more complex terms like xpath query engine, def/use coverage, etc...
+- A glossary or footnotes could be added at the end of the article containing
+definitions for difficult terms 
 
 * General synthesis
+The paper explains the problem of equivalent mutants in mutation testing. Experiments
+done on the jaxen library revealed a 40% equivalent mutation rate. This high rate 
+shows the limitations of existing tools like µJava to handle the problem of equivalent mutants, which
+does not meet the requirements of the authors for automation and scalability.
+To address this problem, a solution is proposed by the authors - a custom mutation
+testing tool called JAVALANCE. This tool could potentially reduce the frequency of
+equivalent mutants and their impact by using techniques such as selective mutation,
+mutant schemadata, and coverage data for each test. These techniques are a 
+significant contribution to the field, as they could increase the efficiency of 
+mutation testing tools in general.
+While the authors contribution is promising, I am not convinced yet about JAVALANCE. 
+Further testing is needed and on much more software to validate their findings.
