@@ -1,0 +1,30 @@
+Short review of "The Impact of Equivalent Mutants"
+
+*Summary
+The authors talk about the problem of equivalent mutants in mutation testing. 
+Equivalent mutants are changes in the code that do not change software's behavior.
+Their problem is that they cannot be detected by test suites. The authors experimented
+on an unpopular library called Jaxen XPATH query engine with a lot of testing code
+and coverage. After experimenting with that library, they found out that 
+40% of the mutations were equivalent. The contribution of the authors is a development
+of their own mutation tool called Javalance that could reduce these equivalent mutations (to be confirmed)
+
+* Pros
+
+* Cons
+- The examples from the jaxen code are not clear and require knowledge of what a xpath query engine,
+namespace node, xpath factory, jaxen handler, pattern parser, etc... is. 
+
+* Which sections could be improved
+- The introduction section could have had a paragraph about the context of Jaxen - what it 
+exactly is, in which projects it is being used, and why the authors chose such an unpopular library 
+to experiment. I understand that jaxen had an important number of testing code and coverage, but 
+this should not be the sole argument. The authors just mentionned that Jaxen is an XPath query
+engine, but I personally have no idea what it means and how it can be useful in projects.
+After mentioning that jaxen is only used in dozen projects, it made me less engaged in the article
+- Easiers examples of equivalent mutants can be used, so that readers spend less time trying
+to understand the code and more time on the main topic of the article
+- An addition of a glossary at the end of the article could be added (or footnote) to give 
+a definition for more complex terms like xpath query engine, def/use coverage, etc...
+
+* General synthesis
