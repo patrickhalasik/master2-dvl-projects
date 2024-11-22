@@ -1,0 +1,41 @@
+Essai cybersécurité - rootkits anti-triche dans les jeux vidéo (brouillon)
+
+Je commence par expliquer ce qu'est un rootkit. Un rootkit est un outil qui sert à pirater 
+des ordinateurs et systèmes informatiques. Il est potentiellement dangereux, permet au pirate de prendre
+le contrôle de l'ordinateur de la victime et cacher certains processus et fichiers. 
+Il est considéré comme logiciel malveillant (source: UKNF)
+
+
+(différents types de rootkits)
+
+
+(contexte des triches/piratage dans les jeux-vidéo, les premiers systèmes pour lutter
+contre ces 2 problèmes, et "rootkits" anti-triche qui sont finalement des systèmes anti-triches niveau Kernel)
+
+
+Ces "rootkits" installés par les jeux vidéo sont en réalité
+des systèmes anti-triches niveau noyeau, installés avec le consentement de l'utilisateur et généralement
+actifs uniquement lorsqu'on joue au jeu en question. Ils sont beaucoup plus invasifs que 
+les systèmes anti-triches classiques et sont considérés par certains joueurs comme des rootkits 
+en raison des nombreuses controverses
+
+Exemple de logiciels invasifs mais non rootkit: BattleEye (GTA 5)
+
+Exemples de logiciels rootkit (Kernel level anticheats): Vanguard de RIOT, Ricochet, VAC de steam (vérifier)
+
+Exemple de controverses: Vanguard de riot est accusé de collecter des données personnelles 
+des joueurs sans autorisation
+
+Exemples de jeux vidéo avec systèmes anti-triche niveau noyau: League of Legends, Blackops, Valorant, Fortnite, Apex Legends, PUBG, etc.
+
+(source pour ces exemples: Steam)
+
+
+
+(petit lexique quelque part? et dire que kernel = noyau en français)
+
+
+Bibliographie
+
+- UKNF (Polish Financial Supervision Authority) - 2024: https://cebrf.knf.gov.pl/encyklopedia/hasla/385-definicje/823-rootkit
+- Steam - 2024: https://store.steampowered.com/curator/31718523-Rootkit-Anti-Cheats/
