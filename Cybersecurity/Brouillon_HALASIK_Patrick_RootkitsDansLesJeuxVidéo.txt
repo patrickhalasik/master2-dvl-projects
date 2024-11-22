@@ -3,11 +3,22 @@ Essai cybersécurité - rootkits anti-triche dans les jeux vidéo (brouillon)
 Titre: définition rootkits et différents types
 
 Je commence par expliquer ce qu'est un rootkit. Un rootkit est un outil qui sert à pirater 
-des ordinateurs et systèmes informatiques. Il est potentiellement dangereux, permet au pirate de prendre
-le contrôle de l'ordinateur de la victime et cacher certains processus et fichiers. 
+des ordinateurs et systèmes informatiques. Il est potentiellement dangereux, car il permet au pirate 
+de désactiver les antivirus,prendre le contrôle de l'ordinateur infecté, et cacher certains processus et fichiers. 
 Il est considéré comme logiciel malveillant (1)
 
-(différents types de rootkits)
+Titre: (différents types de rootkits sans rentrer dans les détails)
+
+1) Rootkit niveau noyau -> 
+Rootkit firmware -> rootkit pouvant infecter le disque dur et le BIOS d'une carte mère en manipulant le logiciel sur la puce mémoire
+Rootkit de démarrage (bootkit?) - rootkit infectant l'enregistrement de démarrage (comme le MBR)
+Rootkit de mémoire - rootkit qui s'installe dans la mémoire RAM de l'ordinateur
+Rootkit applicatif - rootkit qui remplace les fichiers de l'ordinateur infecté par des fichiers rootkit. 
+A l'exécution de ces fichiers rootkit,
+Rootkits noyau (kernel) - rootkits qui s'installent au coeur même d'un système d'opération (noyau),
+et qui sont donc les plus dangereux et difficiles à détecter
+
+
 
 
 Titre: contexte des jeux vidéo + systèmes anti-triche/piratage + lien avec les rootkits
@@ -24,7 +35,8 @@ Exemples de jeux vidéo avec systèmes anti-triche niveau noyau(2): League of Le
 
 Titre: Réellement des rootkits?
 (non car ce sont en réalité des systèmes anti-triche/piratage niveau noyau. 
-titre un peu clickbait pour attirer l'attention. mais oui selon les controverses)
+titre un peu clickbait pour attirer l'attention. mais oui selon les controverses et utilisations dérivées pour
+d'autres buts que l'anti-triche)
 Ces "rootkits" installés par les jeux vidéo sont en réalité
 des systèmes anti-triches niveau noyeau, installés avec le consentement de l'utilisateur et généralement
 actifs uniquement lorsqu'on joue au jeu en question. Ils sont beaucoup plus invasifs que 
@@ -53,24 +65,37 @@ Titre: Conclusion
 
 
 Lexique 
-- Rootkit: outil qui sert à pirater un ordinateur, prenant le controle total sur celui-ci
-et pouvant dissimuler des procès et fichiers système (1)
-- Kernel/Noyau
-- Vanguard
+- Kernel/Noyau:
+- Rootkit: Outil qui sert à pirater un ordinateur. Il prend le controle total sur celui-ci
+, en dissimulant des procès et fichiers système
+- Système anti-triche niveau noyau: Logiciel niveau noyau installé par certains jeux vidéo, avec
+le consentement de l'utilisateur, pour lutter contre la triche.
+- Vanguard: Logiciel anti-triche niveau noyau développé par Riot Games. Il contient un pilote mode noyau 
+qui démarre passivement au démarrage de Windows pour monitorer le système, et qui monitore le système activement
+lors de l'utilisation d'un jeu Riot
 - Riot Games: entreprise de développement de jeux vidéo basée à Los Angeles (USA) où le système Vanguard est utilisé (5)
 - Tencent: entreprise chinoise de technologie qui détenait 93% des actions de Riot Games en 2011, et qui est devenu 
 le propriétaire officiel en 2015 (5)
+- BIOS: logiciel de la carte mère installé sur une puce mémoire
+- Software: logiciel installé sur un disque dur offrant des fonctionnalités à l'utilisateur
+- Firmware: logiciel intégré à un matériel spécifique, permettant uniquement de faire le pont entre ce 
+matériel (hardware) et les logiciels (software)
+- Hardware: matériel informatique (disque dur, carte mère, processeur, etc...)
+- MBR (Master Boot Record): enregistrement de démarrage d'un disque dur
 
 
 
 Bibliographie
 
-(1) UKNF (Polish Financial Supervision Authority) - 2024: https://cebrf.knf.gov.pl/encyklopedia/hasla/385-definicje/823-rootkit
-(2) Steam - 2024: https://store.steampowered.com/curator/31718523-Rootkit-Anti-Cheats/
-(3) Rtbf - 06/05/2024: https://www.rtbf.be/article/vanguard-le-logiciel-anti-triche-sur-league-of-legends-pourrait-casser-votre-pc-11369713
-(4) GamingOnLinux - 11/04/2024: https://www.gamingonlinux.com/2024/04/riot-games-talk-vanguard-anti-cheat-for-league-of-legends-and-why-its-a-no-for-linux/
-(5) CNBC - 22/01/2024: https://www.cnbc.com/2024/01/22/tencents-riot-games-division-cuts-11percent-of-staff-to-create-focus.html
+Steam - 2024: https://store.steampowered.com/curator/31718523-Rootkit-Anti-Cheats/
+Rtbf - 06/05/2024: https://www.rtbf.be/article/vanguard-le-logiciel-anti-triche-sur-league-of-legends-pourrait-casser-votre-pc-11369713
+UKNF (Polish Financial Supervision Authority) - 2024: https://cebrf.knf.gov.pl/encyklopedia/hasla/385-definicje/823-rootkit
+GamingOnLinux - 11/04/2024: https://www.gamingonlinux.com/2024/04/riot-games-talk-vanguard-anti-cheat-for-league-of-legends-and-why-its-a-no-for-linux/
+CNBC - 22/01/2024: https://www.cnbc.com/2024/01/22/tencents-riot-games-division-cuts-11percent-of-staff-to-create-focus.html
+League of Legends Wiki - 06/08/2024: https://leagueoflegends.fandom.com/wiki/Riot_Vanguard
+Cyware Social - 15/12/2019: https://social.cyware.com/news/what-is-the-difference-between-gootkit-bootkit-and-rootkit-e124308c
+Fortinet - 2024: https://www.fortinet.com/fr/resources/cyberglossary/rootkit
+SolutionsHub Epam - 01/03/2024: https://solutionshub.epam.com/blog/post/firmware-vs-software
+Data LabCenter - 2024: https://www.data-labcenter.fr/glossaire/mbr-master-boot-record/
 
-
-(- Github (répositoire Git contenant l'essai de l'étudiant) - 22/11/2024: https://github.com/patrickhalasik/master2-dvl-projects/tree/main -> je sais pas si il faut mentionner que mon
-devoir est sur github, mais je le mets au cas où)
+Github (répositoire Git contenant mon brouillon et essai final) - 22/11/2024: https://github.com/patrickhalasik/master2-dvl-projects/tree/main/Cybersecurity
