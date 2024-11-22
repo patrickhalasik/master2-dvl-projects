@@ -15,28 +15,38 @@ Titre: contexte des jeux vidéo + systèmes anti-triche/piratage + lien avec les
 (contexte des triches/piratage dans les jeux-vidéo, les premiers systèmes pour lutter
 contre ces 2 problèmes, et "rootkits" anti-triche qui sont finalement des systèmes anti-triches niveau Kernel)
 
-
-Titre: Réellement des rootkits?
-(non car ce sont en réalité des systèmes anti-triche/piratage niveau noyau. 
-titre un peu clickbait pour attirer l'attention)
-Ces "rootkits" installés par les jeux vidéo sont en réalité
-des systèmes anti-triches niveau noyeau, installés avec le consentement de l'utilisateur et généralement
-actifs uniquement lorsqu'on joue au jeu en question. Ils sont beaucoup plus invasifs que 
-les systèmes anti-triches classiques et sont considérés par certains joueurs comme des rootkits 
-en raison des nombreuses controverses
-
-Titre: Exemples de système anti-triche
 Exemple de logiciels invasifs mais non rootkit: BattleEye (GTA 5)
 Exemples de logiciels rootkit (Kernel level anticheats): Vanguard de RIOT, Ricochet, VAC de steam (vérifier)
 (peut-être pas intéressant pour le lecteur
 Exemples de jeux vidéo avec systèmes anti-triche niveau noyau(2): League of Legends, Blackops, Valorant, Fortnite, Apex Legends, PUBG, etc.)
 
 
-Titre: Controverses sur Vanguard (3)
-Se concentrer sur Vanguard pour le reste de l'essai.
 
-Exemple de controverses: Vanguard de riot est accusé de collecter des données personnelles 
-des joueurs sans autorisation (source?)
+Titre: Réellement des rootkits?
+(non car ce sont en réalité des systèmes anti-triche/piratage niveau noyau. 
+titre un peu clickbait pour attirer l'attention. mais oui selon les controverses)
+Ces "rootkits" installés par les jeux vidéo sont en réalité
+des systèmes anti-triches niveau noyeau, installés avec le consentement de l'utilisateur et généralement
+actifs uniquement lorsqu'on joue au jeu en question. Ils sont beaucoup plus invasifs que 
+les systèmes anti-triches classiques et sont considérés par certains joueurs comme des rootkits 
+en raison des nombreuses controverses
+
+Titre: Quand un système anti-triche devient un rootkit - Controverses sur Vanguard 
+Se concentrer sur Vanguard pour le reste de l'essai. (3, 4)
+
+1) Les joueurs sont inquietés par la récupération des données par Vanguard. 
+Vanguard collecte les donnée pour le système anti-triche, mais après où vont
+les données?
+2) Inquiétude renforcée  à cause de l'éditeur chinois des jeux vidéo, Tencent
+3) Des joueurs ont déclaré que l'installation de Vanguard sur leur PC ont provoqué des "bricks",
+rendant leur ordinateurs inutilisables. Riot déclare ne pas avoir confirmés de cas avec 
+ces problèmes
+4) Un jouer professionnel a réinitialisé sa carte mère et a remarqué que Vanguard était toujours lancé
+5) Vanguard peut uniquement accéder au noyau Windows, et rend donc le jeu inutilisable pour les joueurs  
+qui utilisaient Wine, une couche de compatibilité pour faire tourner des logiciels Windows sur Linux.
+Le design de Linux rend extrèmement difficile l'accès au noyau et sa manipulation
+
+
 
 
 Titre: Conclusion
@@ -46,6 +56,10 @@ Lexique
 - Rootkit: outil qui sert à pirater un ordinateur, prenant le controle total sur celui-ci
 et pouvant dissimuler des procès et fichiers système (1)
 - Kernel/Noyau
+- Vanguard
+- Riot Games: entreprise de développement de jeux vidéo basée à Los Angeles (USA) où le système Vanguard est utilisé (5)
+- Tencent: entreprise chinoise de technologie qui détenait 93% des actions de Riot Games en 2011, et qui est devenu 
+le propriétaire officiel en 2015 (5)
 
 
 
@@ -53,7 +67,10 @@ Bibliographie
 
 (1) UKNF (Polish Financial Supervision Authority) - 2024: https://cebrf.knf.gov.pl/encyklopedia/hasla/385-definicje/823-rootkit
 (2) Steam - 2024: https://store.steampowered.com/curator/31718523-Rootkit-Anti-Cheats/
-(3) Rtbf - 06/05/2024/ https://www.rtbf.be/article/vanguard-le-logiciel-anti-triche-sur-league-of-legends-pourrait-casser-votre-pc-11369713
+(3) Rtbf - 06/05/2024: https://www.rtbf.be/article/vanguard-le-logiciel-anti-triche-sur-league-of-legends-pourrait-casser-votre-pc-11369713
+(4) GamingOnLinux - 11/04/2024: https://www.gamingonlinux.com/2024/04/riot-games-talk-vanguard-anti-cheat-for-league-of-legends-and-why-its-a-no-for-linux/
+(5) CNBC - 22/01/2024: https://www.cnbc.com/2024/01/22/tencents-riot-games-division-cuts-11percent-of-staff-to-create-focus.html
+
 
 (- Github (répositoire Git contenant l'essai de l'étudiant) - 22/11/2024: https://github.com/patrickhalasik/master2-dvl-projects/tree/main -> je sais pas si il faut mentionner que mon
 devoir est sur github, mais je le mets au cas où)
