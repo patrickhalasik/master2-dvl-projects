@@ -1,41 +1,59 @@
 Essai cybersécurité - rootkits anti-triche dans les jeux vidéo (brouillon)
 
+Titre: définition rootkits et différents types
+
 Je commence par expliquer ce qu'est un rootkit. Un rootkit est un outil qui sert à pirater 
 des ordinateurs et systèmes informatiques. Il est potentiellement dangereux, permet au pirate de prendre
 le contrôle de l'ordinateur de la victime et cacher certains processus et fichiers. 
-Il est considéré comme logiciel malveillant (source: UKNF)
-
+Il est considéré comme logiciel malveillant (1)
 
 (différents types de rootkits)
 
+
+Titre: contexte des jeux vidéo + systèmes anti-triche/piratage + lien avec les rootkits
 
 (contexte des triches/piratage dans les jeux-vidéo, les premiers systèmes pour lutter
 contre ces 2 problèmes, et "rootkits" anti-triche qui sont finalement des systèmes anti-triches niveau Kernel)
 
 
+Titre: Réellement des rootkits?
+(non car ce sont en réalité des systèmes anti-triche/piratage niveau noyau. 
+titre un peu clickbait pour attirer l'attention)
 Ces "rootkits" installés par les jeux vidéo sont en réalité
 des systèmes anti-triches niveau noyeau, installés avec le consentement de l'utilisateur et généralement
 actifs uniquement lorsqu'on joue au jeu en question. Ils sont beaucoup plus invasifs que 
 les systèmes anti-triches classiques et sont considérés par certains joueurs comme des rootkits 
 en raison des nombreuses controverses
 
+Titre: Exemples de système anti-triche
 Exemple de logiciels invasifs mais non rootkit: BattleEye (GTA 5)
-
 Exemples de logiciels rootkit (Kernel level anticheats): Vanguard de RIOT, Ricochet, VAC de steam (vérifier)
+(peut-être pas intéressant pour le lecteur
+Exemples de jeux vidéo avec systèmes anti-triche niveau noyau(2): League of Legends, Blackops, Valorant, Fortnite, Apex Legends, PUBG, etc.)
+
+
+Titre: Controverses sur Vanguard (3)
+Se concentrer sur Vanguard pour le reste de l'essai.
 
 Exemple de controverses: Vanguard de riot est accusé de collecter des données personnelles 
-des joueurs sans autorisation
-
-Exemples de jeux vidéo avec systèmes anti-triche niveau noyau: League of Legends, Blackops, Valorant, Fortnite, Apex Legends, PUBG, etc.
-
-(source pour ces exemples: Steam)
+des joueurs sans autorisation (source?)
 
 
+Titre: Conclusion
 
-(petit lexique quelque part? et dire que kernel = noyau en français)
+
+Lexique 
+- Rootkit: outil qui sert à pirater un ordinateur, prenant le controle total sur celui-ci
+et pouvant dissimuler des procès et fichiers système (1)
+- Kernel/Noyau
+
 
 
 Bibliographie
 
-- UKNF (Polish Financial Supervision Authority) - 2024: https://cebrf.knf.gov.pl/encyklopedia/hasla/385-definicje/823-rootkit
-- Steam - 2024: https://store.steampowered.com/curator/31718523-Rootkit-Anti-Cheats/
+(1) UKNF (Polish Financial Supervision Authority) - 2024: https://cebrf.knf.gov.pl/encyklopedia/hasla/385-definicje/823-rootkit
+(2) Steam - 2024: https://store.steampowered.com/curator/31718523-Rootkit-Anti-Cheats/
+(3) Rtbf - 06/05/2024/ https://www.rtbf.be/article/vanguard-le-logiciel-anti-triche-sur-league-of-legends-pourrait-casser-votre-pc-11369713
+
+(- Github (répositoire Git contenant l'essai de l'étudiant) - 22/11/2024: https://github.com/patrickhalasik/master2-dvl-projects/tree/main -> je sais pas si il faut mentionner que mon
+devoir est sur github, mais je le mets au cas où)
